@@ -1,0 +1,114 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+        <div class="bg">
+            <header>
+                <div class="container">
+    
+                    <div class="left-side">
+                        <nav>
+                            <ul>
+                              <li><a href="#">Articles</a></li>
+                              <li><a href="Img/Gallery.html">Gallery</a></li>
+                              <li><a href="#">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="center-logo">
+                        <img class="logo" src="Img/blog_logoEdit.png" alt="">
+                    </div>
+    
+                    <div class="right-side">
+                        <nav>
+                            <ul>
+                              <li><a href="#">Articles</a></li>
+                              <li><a href="#">Gallery</a></li>
+                              <li><a href="#">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="main-content">
+                <section class="card-columns">
+                 <div class="card">
+                     <div class="card-img">
+                         <img class="box-img" src="Img/smoothies.png" alt="">
+                        <div class="category-name"><h1>smoothies</h1></div>
+                          <a href="http://google.com">link</a>
+
+                     </div>
+                 </div>
+                 <div class="card">
+                    <div class="card-img">
+                        <img class="box-img" src="Img/desert.jpg" alt="">
+                       <div class="category-name"><h1>Deserts</h1></div>
+                       <a href="http://google.com"></a>
+                    </div>
+                </div>                 
+                <div class="card">
+                    <div class="card-img">
+                        <img class="box-img" src="Img/roll.jpg" alt="">
+                       <div class="category-name"><h1>Sandwitches</h1></div>
+                       <a href="http://google.com">link</a>
+
+                    </div>
+                </div>                
+                 <div class="card">
+                    <div class="card-img">
+                        <img class="box-img" src="Img/desert2.jpg" alt="">
+                       <div class="category-name"><h1>Cakes</h1></div>
+                       <a href="http://google.com">link</a>
+
+                    </div>
+                </div>     
+                 <div class="card">
+                    <a href="http://google.com">
+                    <div class="card-img">
+                        <img class="box-img" src="Img/drinks.jpg" alt="">
+                       <div class="category-name"><h1>tacos</h1></div>
+
+                    </div>
+                    </a>
+                </div>                <div class="card">
+                    <a href="http://google.com">
+                    <div class="card-img">
+                        <img class="box-img" src="Img/backGroundImg.jpg" alt="">
+                       <div class="category-name"><h1>tacos</h1></div>
+
+                    </div>
+                    </a>
+                </div>                <div class="card">
+                    <a href="http://google.com">
+                    <div class="card-img">
+                        <img class="box-img" src="Img/frut.jpg" alt="">
+                       <div class="category-name"><h1>Frute</h1></div>
+
+                    </div>
+                    </a>
+                </div>                <div class="card">
+                    <a href="http://google.com">
+                    <div class="card-img">
+                        <img class="box-img" src="Img/brandi-ibrao-M-Br3v3-gao-unsplash.jpg" alt="">
+                       <div class="category-name"><h1>tacos</h1></div>
+
+                    </div>
+                    </a>
+                </div>
+                </section>
+            </div>
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+$(".card").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+</script>
