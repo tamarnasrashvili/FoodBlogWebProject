@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather');
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+@import url('https://kit.fontawesome.com/a076d05399.js');
 body{
     margin: 0px;
     padding: 0px;
@@ -85,7 +86,8 @@ header{
 .main-content{
     padding-left: 10%;
     padding-right: 10%;
-    height: auto;
+    min-height: 1000px;
+    max-height: auto;
 }
 .card-columns{
   display: grid;
@@ -435,20 +437,133 @@ body#AboutUs{
 .FoodInfo{
   display: grid;
   grid-gap: 10px;
-  grid-template-columns:100%;
+  grid-template-columns:20%;
+  grid-template-rows: 50%;
   grid-template-areas:
-  "sidebar content content"
+  "sidebar foodcontent"
+  "sidebar foodcontent"
 }
 
-
+.foodcontent{
+  grid-area: foodcontent;
+  background-color: rgba(204, 204, 204, 0.966);
+  display: grid;
+  grid-template-rows: 50%;
+  grid-gap: 10px;
+  grid-template-areas:
+  "imgContent"
+  "textarea";
+  height: 100%;
+  padding: 20px;
+  margin: 10px;
+}
 .sidebar{
-
+  grid-area: sidebar;
 }
 
 .content{
+  grid-area: imgContent;
+  position: relative;
+}
+.content img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 70%;
+  width:auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  filter: brightness(70%);
+}
+.sidebar li a{
+  display: block;
+  padding:8px 16px ;
+  text-decoration: none;
+}
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+.content-text{
+  grid-area:textarea;
+  overflow: hidden;
+}
+.icons{
+  position:absolute;
 
 }
 
-.content img{
-  width:
+.cookingTime{
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto; 
+  justify-items: center; 
+}
+
+
+
+/*Login*/
+
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
 }
