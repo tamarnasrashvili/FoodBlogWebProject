@@ -311,6 +311,9 @@ body#AboutUs{
   }
   
 /*Category*/
+.topnav a{
+  text-decoration: none !important;
+}
 .link{
   text-decoration: none !important;
 }
@@ -518,7 +521,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+.btn {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -528,7 +531,7 @@ button {
   width: 100%;
 }
 
-button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
